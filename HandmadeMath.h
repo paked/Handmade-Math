@@ -407,6 +407,19 @@ typedef union hmm_vec4
     {
         union
         {
+            hmm_vec3 xyz;
+            struct
+            {
+                float x, y, z;
+            };
+        };
+
+        float w;
+    };
+    struct
+    {
+        union
+        {
             hmm_vec3 RGB;
             struct
             {
